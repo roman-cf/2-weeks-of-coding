@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Tip Calculator</title>
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+	<script>var seiteID=5;</script>
+
+	<header>
+		<div id="topnav"></div>
+	</header>
+	<main class="container">
+		<div class="rahmen1">
+				
+			<div id="titel2">
+				<h2>Trinkgeldrechner</h2>
+			</div>
+
+			<div id="inhalt1">
+				<p>Rechnungsbetrag: <input type="text" id="betrag" onkeyup="eingabekontrolleB()" value="" placeholder="0,00"></p>
+				<p>Zufriedenheit: 
+				<select id="zufriedenheit" onchange="eingabekontrolleZ()">
+					<option value="0">wählen</option>
+					<option value="1">überragend</option>
+					<option value="2">gut</option>
+					<option value="3">durchschnittlich</option>
+					<option value="4">katastrophal</option>
+				</select>
+				<b>oder</b> Eingabe in <input type="text" id="prozentEingabe" onkeyup="eingabekontrolleP()" value="" placeholder="00">%</p>
+				<p>Land:
+				<select id="land">
+					<option value="0">Österreich</option>
+					<option value="1">Deutschland</option>
+					<option value="2">Frankreich</option>
+
+				</select></p>
+				<button onclick="trinkgeldrechnen()" >Trinkgeld berechnen</button>
+			</div>
+			<div id="summe">	
+				<p id="ausgabe"></p>
+				<div id="daumen"></div>
+				<p id="zusatzausgabe"></p>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<p>copyright &copy;</p> 
+	</footer>
+
+<script src="./js/tipcal.js" type="text/javascript" charset="utf-8" async defer>
+</script>
+<script src="./js/main.js" type="text/javascript" charset="utf-8" async defer>
+</script>
+	
+</body>
+</html>

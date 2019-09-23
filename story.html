@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Chain Story</title>
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+	<script>var seiteID=9;</script>
+	<header>
+		<div id="topnav"></div>
+	</header>
+
+	<!-- Hauptinhalt der Seite -->
+	<main class="container">
+
+		<div class="rahmenstory">
+				
+			<div id="titelstory">
+				<h2>Chain Story</h2>		
+			</div>
+
+			<div id="inhaltstory">
+				<div id="storyoben">
+					<button onclick="iddown()">zurück</button>
+					<button onclick="idup()">vor</button>
+					<button onclick="cleareintrag()" >Eingabe löschen</button>
+
+					<p id="storytop">Dein Text: </p>
+
+					<textarea name="eingabefeld" id="eingabefeldid" onkeyup="cleartop()">Platzhalter</textarea> 			
+					<button onclick="eintrag()" >Absatz hinzufügen</button>
+					<button onclick="ersetzen()" >Absatz ersetzen</button>
+				</div>
+			</div>
+			<div id="fussstory">
+			</div>
+		</div>	</main>
+
+	<footer>
+		<p>copyright &copy; 		<button onclick="storagereset()">storagereset</button> </p> 
+	</footer>
+
+	<script src="./js/main.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="./js/story.js" type="text/javascript" charset="utf-8" async defer></script>	
+</body>
+</html>
